@@ -10,8 +10,8 @@
 [Ir al buyer persona](https://github.com/JosafatJimenezB/MissionFrontEnd/blob/main/01%20-%20Intro/Practica%201/buyer%20persona.pdf)
 
 
-### Publico General :family_man_man_girl_girl:
-[Ir a publico general]()
+### Publico Objetivo :family_man_man_girl_girl:
+[Ir a publico general](https://miro.com/app/board/uXjVOJ4aSNQ=/?invite_link_id=89894243169)
 
 
 ### Diseño UX  :foggy:
