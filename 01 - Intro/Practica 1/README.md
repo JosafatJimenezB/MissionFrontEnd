@@ -14,8 +14,9 @@
 [Ir a publico general](https://miro.com/app/board/uXjVOJ4aSNQ=/?invite_link_id=89894243169)
 
 
-### Diseño UX  :foggy:
-[Ir al diseño UX](https://github.com/JosafatJimenezB/MissionFrontEnd/blob/main/01%20-%20Intro/Practica%201/Clinica%20naturista.bmpr)
+### Wireframe :foggy:
+[Ir al wireframe](https://github.com/JosafatJimenezB/MissionFrontEnd/blob/main/01%20-%20Intro/Practica%201/Clinica%20naturista.pdf)
+
 
 ### Diseño UI  :sunrise_over_mountains:
 
