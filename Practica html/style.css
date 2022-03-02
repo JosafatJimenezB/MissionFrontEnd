@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;900&display=swap');
+
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: #d4a886;
+    /*background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);*/
+}
+
+header{
+    padding-right: 50px;
+    background-color: #111B1E;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #d4a886;
+    
+    position: fixed;
+    left: 0;
+    right: 0;
+
+}
+
+header h2{
+    padding-left: 50px;
+    display: flex;
+    font-size: 2em;
+    color: #d4a886;
+}
+
+nav li{
+    float: left;
+    list-style: none;
+}
+
+nav a{
+    margin-top: none;
+    transition: all 0.3s ease;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #d4a886;
+}
+
+nav a:hover{
+    border-radius: 5px;
+    background-color: #d4a886;
+    color: #111B1E;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111B1E;
+    height: 90vh;
+}
+
+.home img{
+    height: 500px;
+    border-radius: 50%;
+}
+
+.pasteles{
+    height: 60vh;
+}
+
+#first-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    width: 30%;
+    height: auto;
+    margin: 30px;
+    padding: 30px;
+}
+
+#first-table table{
+    width: auto;
+    border: 3px solid rgb(138, 138, 138);
+    opacity: blur(20);
+}
+
+
+.pedido{
+    background-color: #111B1E;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #d4a886;
+}
+
+.pedido form{
+    width: 30%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.3);;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.pedido form h2{
+    font-size: 3em;
+}
+
+.pedido form label{
+    align-self: start;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#nombre, #email{
+    color: #d4a886;
+    background-color: #111B1E;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 4px;
+}
+
+
+#sabor{
+    font-size: 1rem;
+}
+
+#sabor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+

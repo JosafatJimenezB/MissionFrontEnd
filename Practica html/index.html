@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Space 36 - Bakery</title>
+</head>
+<body>
+    <header>
+        <h2>Space 36</h2>
+        <nav>
+            <li><a id="menu" href="#">Home</a></li>
+            <li><a id="menu" href="#pasteles">Pasteles</a></li>
+            <li><a id="menu" href="#">Realizar Pedido</a></li>
+        </nav>
+    </header>
+    <section>
+        <article class="home">
+            <img src="./assets/logo.svg" alt="Space 36 Logo">
+        </article>
+
+        <article class="pasteles">
+            <div id="first-table">
+                <h2>Pasteles</h2>
+                <table>
+                    <tr>
+                        <th>Compañía</th>
+                        <th>Contacto</th>
+                        <th>País</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        <article class="pedido">
+            <form action="">
+                <h2>Crear Pedido</h2>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" placeholder="fulanito...">
+
+                <label for="email">Email</label>
+                <input id="email" type="text" placeholder="hola@hola.com...">
+                
+                <label for="sabor">Sabor 1</label>
+                <input id="sabor" type="checkbox" name="sabor">
+
+                <label for="sabor">Sabor 2</label>
+                <input id="sabor" type="checkbox" name="sabor">
+
+                <label for="sabor">Sabor 3</label>
+                <input id="sabor" type="checkbox" name="sabor">
+
+                <label for="sabor">Sabor 4</label>
+                <input id="sabor" type="checkbox" name="sabor">
+
+                <input type="submit" value="submit">
+                <input type="reset" value="Clear form">
+            </form>
+        </article>
+    </section>
+
+</body>
+</html>
