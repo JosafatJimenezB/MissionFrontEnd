@@ -17,9 +17,9 @@ header{
     justify-content: space-between;
     border-bottom: 3px solid #d4a886;
     
-    position: fixed;
+    /* position: fixed;
     left: 0;
-    right: 0;
+    right: 0; */
 
 }
 
@@ -57,7 +57,7 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     background-color: #111B1E;
-    height: 90vh;
+    height: 100vh;
 }
 
 .home img{
@@ -95,7 +95,6 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     color: #d4a886;
 }
 
@@ -139,12 +138,20 @@ nav a:hover{
 
 #sabor{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 
+footer{
+    overflow: hidden;
+    background-color: #111B1E;
+    color: #d4a886;
+    border-top: 3px solid #d4a886;
+    text-align: center;
+    font-size: 1rem;
+}
 
-
-
-
+.uil{
+    color: red;
+}
