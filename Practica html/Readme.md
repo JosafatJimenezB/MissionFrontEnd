@@ -1,3 +1,6 @@
+
+![astronaut](./assets/astronaut.gif)
+
 ### Bienvenido a la practica de las pasteleria
 
 En esta practica se ultizaron elementos html y css para poder empezar con la practica
