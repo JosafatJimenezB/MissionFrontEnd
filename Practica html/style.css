@@ -8,6 +8,10 @@ body{
     /*background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);*/
 }
 
+
+
+/*-----------------Navbar-----------------*/
+
 header{
     padding-right: 50px;
     background-color: #111B1E;
@@ -17,9 +21,9 @@ header{
     justify-content: space-between;
     border-bottom: 3px solid #d4a886;
     
-    /* position: fixed;
+    position: fixed;
     left: 0;
-    right: 0; */
+    right: 0;
 
 }
 
@@ -52,104 +56,290 @@ nav a:hover{
     color: #111B1E;
 }
 
+
+
+/*-----------------Landing page con el logo-----------------*/
+
 .home{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #111B1E;
+    background-image: url(./assets/fondo-landing.jpg);
     height: 100vh;
 }
 
 .home img{
     height: 500px;
-    border-radius: 50%;
 }
 
-.pasteles{
-    height: 60vh;
+
+/* .pasteles{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px;
+    width: 45%;
+    height: auto;
+    padding: 30px;
+
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
 }
 
-#first-table{
+.pasteles h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+#pastel-img{
+    width: 50%;
+}
+
+.pasteles table{
+    border-radius: 20px;
+    width: auto;
+    margin: 0px;
+    padding: 30px;
+    border-collapse: collapse;
+}
+
+.pasteles th{
+    background-color: white;
+    align-items: center;
+    border-right: 1px solid #111B1E;
+}
+
+.pasteles td{
+    border-right: 1px solid #111B1E;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+} */
+
+
+
+/*-----------------Pasteles disponibles de la pagina-----------------*/
+
+
+.pastel-cajas{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
-    width: 30%;
-    height: auto;
-    margin: 30px;
-    padding: 30px;
+    margin: 40px;
 }
 
-#first-table table{
-    width: auto;
-    border: 3px solid rgb(138, 138, 138);
-    opacity: blur(20);
+.pastel-cajas h2{
+    font-size: 3em;
+    text-align: center;
+
+    border-bottom: 2px solid #111B1E;
+    padding-bottom: 20px;
 }
+
+#caja-master{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#pastel-info{
+    transition:all 0.4s ease;
+    justify-content: center;
+    overflow: hidden;
+    width: 30%;
+    margin: 20px;
+    padding: 40px;
+
+
+    background-color: #111B1E;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgb(65, 65, 65);
+    margin-bottom: 100px;
+}
+
+#pastel-info img{
+    width: 100%;
+    height:300px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+#pastel-info h3{
+    color: #d4a886;
+    border-top: 2px double #d4a886;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+
+
+
+/*-----------------Adornos del pastel-----------------*/
+
+
+
+.adornos-pastel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.adornos-pastel h2{
+    font-size: 3em;
+    text-align: center;
+
+    border-bottom: 2px solid #111B1E;
+    padding-bottom: 20px;
+}
+
+#adornos-master{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#adornos-info{
+    transition:all 0.4s ease;
+    justify-content: center;
+    overflow: hidden;
+    width: 30%;
+    margin: 20px;
+    padding: 40px;
+
+
+    background-color: #111B1E;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgb(65, 65, 65);
+    margin-bottom: 100px;
+}
+
+#adornos-info img{
+    width: 100%;
+    height:300px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+#adornos-info h3{
+    color: #d4a886;
+    border-top: 2px double #d4a886;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+
+/*-----------------Apartado de el formulario-----------------*/
 
 
 .pedido{
-    background-color: #111B1E;
+    border-top:3px solid #111B1E;
+    background-color: #d4a886;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     color: #d4a886;
+}
+
+.pedido-title{
+    font-size: 2em;
+    color: #111B1E;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #111B1E;
 }
 
 .pedido form{
     width: 30%;
     height: auto;
-    background-color: rgba(255, 255, 255, 0.3);;
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    background-color: #111B1E;
     margin: 40px;
     padding: 30px;
     border-radius: 20px;
+    box-shadow: 10px 10px 20px rgb(65, 65, 65);
 }
 
-.pedido form h2{
-    font-size: 3em;
+#titulo-form{
+    color: #d4a886;
+    font-size: 2em;
 }
 
 .pedido form label{
-    align-self: start;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
 }
 
-#nombre, #email{
-    color: #d4a886;
-    background-color: #111B1E;
+#nombre, #email, #telefono{
+    color: #111B1E;
+    background-color: #d4a886;
     font-size: 1em;
-    margin-top: 10px;
+    margin-top: 5px 0px 20px 0px;
     margin-bottom: 5px;
     border-radius: 5px;
     border: none;
     padding: 4px;
 }
 
+#send, #clear{
+    transition: all 0.3s ease;
+    background-color: #d4a886;
+    border: 1px solid #111B1E;
+    color: #111B1E;
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
 
-#sabor{
-    font-size: 1rem;
+    margin: 10px 10px 10px 0px;
+}
+
+#send:hover, #clear:hover{
+    border: 1px solid #d4a886;
+    background-color: #111B1E;
+    color: #d4a886;
+    cursor: pointer;
+}
+
+.pedido form h3{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #d4a886;
+}
+
+#lblsabor{
+    padding-bottom: 10px;
 }
 
 #sabor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px;
+    background-color: #d4a886;
 }
 
+
+
+
+/*-----------------Footer de la pagina-----------------*/
 
 footer{
     overflow: hidden;
     background-color: #111B1E;
     color: #d4a886;
-    border-top: 3px solid #d4a886;
     text-align: center;
     font-size: 1rem;
+    font-weight: 100;
 }
 
 .uil{

@@ -14,47 +14,110 @@
         <nav>
             <li><a id="menu" href="#">Home</a></li>
             <li><a id="menu" href="#pasteles">Pasteles</a></li>
-            <li><a id="menu" href="#">Realizar Pedido</a></li>
+            <li><a id="menu" href="#adornos">Adornos</a></li>
+            <li><a id="menu" href="#pedido">Realizar Pedido</a></li>
         </nav>
     </header>
     <section>
         <article class="home">
-            <img src="./assets/logo.svg" alt="Space 36 Logo">
+            <img src="./assets/logo-sin-fondo.svg" alt="Space 36 Logo">
         </article>
 
-        <article class="pasteles">
-            <div id="first-table">
-                <h2>Pasteles</h2>
-                <table>
-                    <tr>
-                        <th>Compañía</th>
-                        <th>Contacto</th>
-                        <th>País</th>
+        <!-- <article class="pasteles" id="pasteles">
+            <h2>Pasteles Disponibles</h2>
+            <table>
+                <tr>
+                    <th>
+                        <img id="pastel-img" src="./assets/fresa.jpg" alt="Pastel de fresa">
+                    </th>
+                    <th>
+                        <img id="pastel-img" src="./assets/chocolate.jpg" alt="Pastel de chocolate">
+                    </th>
+                    <th>
+                        <img id="pastel-img" src="./assets/vainilla.jpg" alt="Pastel de vainilla">
+                    </th>
                     </tr>
                     <tr>
-                        <td>Alfreds Futterkiste</td>
-                        <td>Maria Anders</td>
-                        <td>Germany</td>
+                        <td>Pastel de Fresa</td> <td>Pastel de Chocolate</td> <td>Pastel de Vainilla</td>
                     </tr>
                     <tr>
-                        <td>Centro comercial Moctezuma</td>
-                        <td>Francisco Chang</td>
-                        <td>Mexico</td>
-                    </tr>
-                </table>
+                        <td>Precio: $300</td> <td>Precio: $350</td> <td>Precio: $400</td>
+                </tr>
+            </table>
+        </article> -->
+
+        <article class="pastel-cajas" id="pasteles">
+            <h2>Pasteles</h2>
+            <div id="caja-master">
+                <div id="pastel-info">
+                    <img src="./assets/fresa.jpg" alt="">
+                    <h3>Pastel de Fresa</h3>
+                    <h3>Precio: $300</h3>
+                </div>
+                <div id="pastel-info">
+                    <img src="./assets/chocolate.jpg" alt="">
+                    <h3>Pastel de Chocolate</h3>
+                    <h3>Precio: $350</h3>
+                </div>
+                <div id="pastel-info">
+                    <img src="./assets/vainilla.jpg" alt="">
+                    <h3>Pastel de Vainilla</h3>
+                    <h3>Precio: $400</h3>
+                </div>
             </div>
         </article>
 
-        <article class="pedido">
+        <article class="adornos-pastel" id="adornos">
+            <h2>Adornos</h2>
+            <div id="adornos-master">
+                <div id="adornos-info">
+                    <img src="./assets/velas.jpg" alt="">
+                    <h3>Velas para Pastel</h3>
+                    <h3>Precio: $80</h3>
+                </div>
+                <div id="adornos-info">
+                    <img src="./assets/muñecos.jpeg" alt="">
+                    <h3>Muñecos</h3>
+                    <h3>Precio: $750</h3>
+                </div>
+                <div id="adornos-info">
+                    <img src="./assets/foto-comestible.jpg" alt="">
+                    <h3>Imagenes Comestibles</h3>
+                    <h3>Precio: $400</h3>
+                </div>
+            </div>
+        </article>
+
+        <article class="pedido" id="pedido">
+            <div class="pedido-title">
+                <h2>Pedidos</h2>
+            </div>
             <form action="">
-                <h2>Crear Pedido</h2>
+                <h2 id="titulo-form">Generar Orden</h2>
                 <label for="nombre">Nombre</label>
-                <input id="nombre" type="text" placeholder="fulanito...">
+                <input id="nombre" type="text" placeholder="fulanito..." required>
+
+                <label for="telefono">Telefono</label>
+                <input id="telefono" type="tel" placeholder="(000)0000000" maxlength="10" required>
 
                 <label for="email">Email</label>
-                <input id="email" type="text" placeholder="hola@hola.com...">
-                <label for="email">Email</label>
-                <input id="email" type="text" placeholder="hola@hola.com...">
+                <input id="email" type="text" placeholder="hola@hola.com..." required>
+
+                <h3>Selecciones sus sabores y adornos</h3>
+
+                <label id="lblsabor" for="sabor">Sabor de Pastel</label>
+                <select id="sabor" name="sabor">
+                    <option value="fresa">Fresa</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="Vainilla">Vainilla</option>
+                    <option value="fresa+choco">50% Fresa + 50% Chocolate</option>
+                    <option value="fresa+vaini">50% Fresa + 50% Vainilla</option>
+                    <option value="choco+vaini">50% Chocolate + 50% Vainilla</option>
+                    <option value="combinado">Tres sabores</option>
+                </select>
+
+                <input id="send" type="submit" value="Enviar">
+                <input id="clear" type="reset" value="Limpiar">
 
             </form>
         </article>
