@@ -81,6 +81,7 @@ nav a:hover{
     height: 500px;
 }
 
+ 
 
 /* .pasteles{
     display: flex;
@@ -222,7 +223,7 @@ nav a:hover{
     padding: 40px;
 
 
-    background-color: #111B1E;
+    background-color: rgb(17, 26, 29);
     border-radius: 20px;
     box-shadow: 10px 10px 20px rgb(65, 65, 65);
     margin-bottom: 100px;

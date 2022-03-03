@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;900&display=swap');
+
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: #d4a886;
+    /*background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);*/
+}
+
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #d4a886;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #111B1E;
+    border-radius: 5px;
+}
+
+
+/*-----------------Navbar-----------------*/
+
+header{
+    padding-right: 50px;
+    background-color: #111B1E;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #d4a886;
+}
+
+header h2{
+    padding-left: 50px;
+    display: flex;
+    font-size: 2em;
+    color: #d4a886;
+}
+
+nav li{
+    float: left;
+    list-style: none;
+}
+
+nav a{
+    margin-top: none;
+    transition: all 0.3s ease;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #d4a886;
+}
+
+nav a:hover{
+    border-radius: 5px;
+    background-color: #d4a886;
+    color: #111B1E;
+}
+
+
+
+/*------------------Dashboard-----------------*/
+
+
+
+
+
+.dashboard{
+    height: 91ch;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: auto;
+}
+
+#pasteles-stock{
+    width: 50%;
+    height: 30vh;
+    margin: 20px;
+    padding: 30px;
+    color: #d4a886;
+    background-color: #111B1E;
+}
+
+#pasteles-stock h2{
+    font-size: 2em;
+}
+
+#pasteles-stock table{
+    align-items: center;
+    border: 2px solid #d4a886;
+    width: 100%;
+    height: 90%;
+}
+
+#pasteles-stock table th, td{
+    text-align: center;
+    height: 10px;
+    border:1px solid #d4a886;
+}
+
+
+
+#adornos-stock{
+    width: 50%;
+    height: 30vh;
+    margin: 20px;
+    padding: 30px;
+    color: #d4a886;
+    background-color: #111B1E;
+}
+
+#adornos-stock h2{
+    font-size: 2em;
+}
+
+#pedidos{
+    width: auto;
+    height: 30vh;
+    margin: 20px;
+    padding: 30px;
+    color: #d4a886;
+    background-color: #111B1E;
+}
+
+#pedidos h2{
+    font-size: 2em;
+}
+
+
+
+
+/*----------footer del admin panel----------*/
+
+footer{
+    overflow: hidden;
+    background-color: #111B1E;
+    color: #d4a886;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.uil{
+    color: red;
+}
+
+
+footer a{
+    color: #d4a886;
+    text-decoration: none;
+    border: 1px solid #d4a886;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+
+
+
+
+
+/*--------------Responsive--------------*/
+
+@media only screen and (max-width: 768px) {
+    
+    body{
+        background-color: red;
+    }
+    
+    nav{
+        display: flex;
+        align-items: center;
+    }
+    
+    nav h2{
+        margin: 10px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        background-color: white;
+    }
+    
+    nav li{
+        width: 100%;
+        display: flex;
+        float: left;
+        
+    }
+    
+    footer{
+        font-size: smaller;
+        padding: 30px;
+    }
+}
