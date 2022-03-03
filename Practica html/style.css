@@ -9,6 +9,15 @@ body{
 }
 
 
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #d4a886;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #111B1E;
+    border-radius: 5px;
+}
 
 /*-----------------Navbar-----------------*/
 
