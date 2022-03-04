@@ -3,7 +3,6 @@
 body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
-    color: black;
     background-color: #d4a886;
     /*background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);*/
 }
@@ -20,6 +19,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 /*-----------------Navbar-----------------*/
+
 
 header{
     padding-right: 50px;
@@ -66,10 +66,10 @@ nav a:hover{
 }
 
 
-
 /*-----------------Landing page con el logo-----------------*/
 
 .home{
+    background: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,13 +138,13 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 40px;
+    margin: none;
 }
 
 .pastel-cajas h2{
     font-size: 3em;
     text-align: center;
-
+    width: 30%;
     border-bottom: 2px solid #111B1E;
     padding-bottom: 20px;
 }
@@ -160,7 +160,7 @@ nav a:hover{
     justify-content: center;
     overflow: hidden;
     width: 30%;
-    margin: 20px;
+    margin: 40px;
     padding: 40px;
 
 
@@ -197,13 +197,12 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 40px;
 }
 
 .adornos-pastel h2{
     font-size: 3em;
     text-align: center;
-
+    width: 30%;
     border-bottom: 2px solid #111B1E;
     padding-bottom: 20px;
 }
@@ -249,32 +248,43 @@ nav a:hover{
 
 
 .pedido{
-    border-top:3px solid #111B1E;
-    background-color: #d4a886;
     height: auto;
     display: flex;
+    color: #d4a886;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #d4a886;
 }
 
-.pedido-title{
-    font-size: 2em;
+.pedido h2{
+    text-align: center;
+    width: 30%;
+    font-size: 3em;
     color: #111B1E;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #111B1E;
+    border-bottom:2px solid #111B1E;
+    padding-bottom: 20px;
+}
+
+.container-pedido{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 0px 70px 0px;
+}
+
+.container-pedido img{
+    width: 30%;
 }
 
 .pedido form{
-    width: 30%;
+    width: 40%;
     height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
     background-color: #111B1E;
-    margin: 40px;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 10px 10px 20px rgb(65, 65, 65);
@@ -286,19 +296,21 @@ nav a:hover{
 }
 
 .pedido form label{
+    padding: 15px 0px 15px 0px;
     font-size: 1.3em;
     font-weight: bold;
 }
 
 #nombre, #email, #telefono{
-    color: #111B1E;
-    background-color: #d4a886;
+    color: #d4a886;
+    background-color: #111B1E;
     font-size: 1em;
     margin-top: 5px 0px 20px 0px;
     margin-bottom: 5px;
-    border-radius: 5px;
-    border: none;
+    border-bottom: 1px solid #d4a886;
+    box-shadow: none;
     padding: 4px;
+    width: 60%;
 }
 
 #send, #clear{
@@ -320,18 +332,36 @@ nav a:hover{
     cursor: pointer;
 }
 
+#especs{
+    border-radius: 5px;
+    background-color: #d4a886;
+    height: 70px;
+}
+
 .pedido form h3{
     text-align: center;
     padding-bottom: 20px;
     border-bottom: 2px solid #d4a886;
 }
 
-#lblsabor{
+#lbl-sabor{
     padding-bottom: 10px;
 }
 
 #sabor{
-    border-radius: 15px;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px;
+    background-color: #d4a886;
+}
+
+#lbl-adorno{
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+#adorno{
+    margin-top: 5px;
     text-align: center;
     font-weight: 600;
     padding: 5px;
@@ -340,6 +370,31 @@ nav a:hover{
 
 
 
+/*--------------Info de contacto------------*/
+
+
+
+.contacto{
+    height: auto;
+    display: flex;
+    color: #d4a886;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contacto h2{
+    text-align: center;
+    width: 30%;
+    font-size: 3em;
+    color: #111B1E;
+    border-bottom:2px solid #111B1E;
+    padding-bottom: 20px;
+}
+
+.contacto img{
+    width: 30%;
+}
 
 /*-----------------Footer de la pagina-----------------*/
 

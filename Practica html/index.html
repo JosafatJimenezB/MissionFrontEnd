@@ -9,6 +9,10 @@
     <title>Space 36 - Bakery</title>
 </head>
 <body>
+
+
+    <!------Barra de navegación------->
+
     <header>
         <h2>Space 36</h2>
         <nav>
@@ -19,7 +23,11 @@
             <li><a id="menu" href="admin.html">Admin Dashboard</a></li>
         </nav>
     </header>
-    <section>
+
+
+    <!------Portada de la pagina------->
+
+    <section class="elementos-pagina">
         <article class="home">
             <img src="./assets/logo-sin-fondo.svg" alt="Space 36 Logo">
         </article>
@@ -47,6 +55,10 @@
             </table>
         </article> -->
 
+
+        <!------Seccion de los pasteles------->
+
+
         <article class="pastel-cajas" id="pasteles">
             <h2>Pasteles</h2>
             <div id="caja-master">
@@ -67,6 +79,9 @@
                 </div>
             </div>
         </article>
+
+        <!------Seccion de los adornos------->
+
 
         <article class="adornos-pastel" id="adornos">
             <h2>Adornos</h2>
@@ -89,10 +104,15 @@
             </div>
         </article>
 
+
+        <!------Seccion de la generacion de pedidos------->
+
+
         <article class="pedido" id="pedido">
-            <div class="pedido-title">
-                <h2>Pedidos</h2>
-            </div>
+            <h2>Pedidos</h2>
+            <div class="container-pedido">
+                <img src="./assets/pedido-sin-fondo.png" alt="Pedido">
+
             <form action="">
                 <h2 id="titulo-form">Generar Orden</h2>
                 <label for="nombre">Nombre</label>
@@ -104,10 +124,14 @@
                 <label for="email">Email</label>
                 <input id="email" type="text" placeholder="hola@hola.com..." required>
 
+                <label for="especs">Especificaciones de sus pastel</label>
+                <input id="especs" type="text" placeholder="Especificaciones extra en su pedido">
+
                 <h3>Selecciones sus sabores y adornos</h3>
 
-                <label id="lblsabor" for="sabor">Sabor de Pastel</label>
+                <label id="lbl-sabor" for="sabor">Sabor de Pastel</label>
                 <select id="sabor" name="sabor">
+                    <option value="default">Seleccione una opción</option>
                     <option value="fresa">Fresa</option>
                     <option value="chocolate">Chocolate</option>
                     <option value="Vainilla">Vainilla</option>
@@ -117,14 +141,46 @@
                     <option value="combinado">Tres sabores</option>
                 </select>
 
-                <input id="send" type="submit" value="Enviar">
-                <input id="clear" type="reset" value="Limpiar">
+                <label id="lbl-adorno" for="adorno">Adorno para su pastel</label>
+                <select id="adorno" name="adorno">
+                    <option value="adorno-opcion">Seleccione una opción</option>
+                    <option value="adorno-opcion">Ninguno</option>
+                    <option value="adorno-opcion">Velas</option>
+                    <option value="adorno-opcion">Muñecos</option>
+                    <option value="adorno-opcion">Impresión Comestible</option>
+                </select>
 
+                <input id="send" type="submit" value="Enviar" onclick="alert('Pedido enviado con exito')">
+                <input id="clear" type="reset" value="Limpiar">
             </form>
+        </div>
         </article>
+
+        <!---Info de contacto--->
+
+        <article class="contacto">
+            <h2>Contactanos</h2>
+            <img src="./assets/ubicacion.png" alt="Ubicacion imagen">
+            <div id="info-contacto">
+                <h3><i class="uil uil-map-marker">Dirección</i></h3>
+                <p>Boulevard Moncalian No. 244, Melilla, España. <br>
+                    Horario de atención a clientes: <br>
+                    Lunes a Sábado: 8 a.m. - 8 p.m. <br>
+                    Domingos: 9 a.m. - 8 p.m.
+                </p>
+            </div>
+        </article>
+
     </section>
+
+
+
+    <!------footer de la pagina------->
     <footer>
-        <h3>Made with <i class="uil uil-heart-sign"></i> by Josafat Jimenez</h3>
+        <h3>Made with <i class="uil uil-heart-sign"></i> by Josafat Jimenez - Sponsored by Microsoft launchX</h3>
     </footer>
+
+
+
 </body>
 </html>
