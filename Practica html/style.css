@@ -69,16 +69,28 @@ nav a:hover{
 /*-----------------Landing page con el logo-----------------*/
 
 .home{
+    padding-top: 200px;
     background: fixed;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-image: url(./assets/fondo-landing.jpg);
+    background-image:linear-gradient(rgba(255,255,255,0.4), 
+    rgba(255,255,255,0.4)) 
+    ,url(./assets/fondo-landing.jpg);
     height: 100vh;
 }
 
 .home img{
-    height: 500px;
+    display: flex;
+    height: 30%;
+}
+
+.home h2{
+    text-align: center;
+    width: 60%;
+    font-size: 3.5em;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #111B1E;
 }
 
  
@@ -302,13 +314,12 @@ nav a:hover{
 }
 
 #nombre, #email, #telefono{
-    color: #d4a886;
+    color: #111B1E;
     background-color: #111B1E;
     font-size: 1em;
     margin-top: 5px 0px 20px 0px;
     margin-bottom: 5px;
-    border-bottom: 1px solid #d4a886;
-    box-shadow: none;
+    background-color: #d4a886;
     padding: 4px;
     width: 60%;
 }
@@ -381,6 +392,7 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 40px;
 }
 
 .contacto h2{
@@ -396,15 +408,31 @@ nav a:hover{
     width: 30%;
 }
 
+.container-contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.uil-map , .uil-tel{
+    color: #111B1E;
+}
+
+#info-contacto{
+    color: #111B1E;
+}
+
 /*-----------------Footer de la pagina-----------------*/
 
 footer{
     overflow: hidden;
     background-color: #111B1E;
     color: #d4a886;
-    text-align: center;
-    font-size: 1rem;
     font-weight: 100;
+}
+
+footer h3{
+    text-align: center;
+    font-size: 0.8rem;
 }
 
 .uil{
