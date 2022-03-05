@@ -37,8 +37,8 @@ En caso de que te quede corto el ejercicio siguele con esto!
 
 ### Despliegue 🚀
 
-En este caso el sitio web ya se encuentra desplegado en dos hosting para poder aprender sobre los despliegues
-pueder verlo a traves de los siguientes enlaces:
+En este caso el sitio web ya se encuentra desplegado en dos hosting gratuitos, para poder aprender sobre los despliegues
+puede verlos a traves de los siguientes enlaces:
 
 #### Netlify :diamond_shape_with_a_dot_inside:
 [Ver despliegue](https://pasteleria-practica.netlify.app/)
