@@ -4,7 +4,7 @@ body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     color: black;
-    background-color: #d4a886;
+    /* background-color: #d4a886; */
     /*background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);*/
 }
 
@@ -65,143 +65,206 @@ nav a:hover{
 
 /*------------------Dashboard-----------------*/
 
-
-
-
-
-.dashboard{
-    height: 91ch;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    
-}
-
-.contenedor{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+section{
+    display: inline-flex;
     flex-direction: row;
-    width: auto;
-}
-
-#pasteles-stock{
-    width: 50%;
-    height: 30vh;
-    margin: 20px;
-    padding: 30px;
-    color: #d4a886;
-    background-color: #111B1E;
-}
-
-#pasteles-stock h2{
-    font-size: 2em;
-}
-
-#pasteles-stock table{
+    flex-wrap: wrap;
     align-items: center;
-    border: 2px solid #d4a886;
+    justify-content: center;
     width: 100%;
-    height: 90%;
-}
-
-#pasteles-stock table th, td{
-    text-align: center;
-    height: 10px;
-    border:1px solid #d4a886;
-}
-
-
-
-#adornos-stock{
-    width: 50%;
-    height: 30vh;
-    margin: 20px;
-    padding: 30px;
-    color: #d4a886;
     background-color: #111B1E;
 }
 
-#adornos-stock h2{
-    font-size: 2em;
+section article{
+    width: 40%;
+    height: auto;
+    margin: 30px;
+    background-color: #d4a886;  
+    padding: 20px 30px 20px 30px;
 }
 
-#pedidos{
-    width: auto;
-    height: 30vh;
-    margin: 20px;
-    padding: 30px;
-    color: #d4a886;
-    background-color: #111B1E;
-}
-
-#pedidos h2{
-    font-size: 2em;
+section article h2{
+    border-bottom: 1px solid #111B1E;
+    padding-bottom: 10px;
 }
 
 
 
+/*------------Seccion stock pasteles-------------*/
 
-/*----------footer del admin panel----------*/
 
-footer{
+.pasteles{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#choco{
+    width: 30%;
     overflow: hidden;
-    background-color: #111B1E;
-    color: #d4a886;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#choco img{
+    height: 130px;
+    width: 100%;
+}
+
+#choco h3{
     text-align: center;
-    font-size: 1rem;
-    font-weight: 100;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    border-top: 2px solid #111B1E;
+    border-bottom: 2px solid #111B1E;
 }
 
-.uil{
-    color: red;
+#vainilla{
+    margin: 0px 5px 0px 5px;
+    width: 30%;
+    overflow: hidden;
+    /* border-left: 1px solid #111B1E; */
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#vainilla img{
+    height: 130px;
+    width: 100%;
+}
+
+#vainilla h3{
+    text-align: center;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    border-top: 2px solid #111B1E;
+    border-bottom: 2px solid #111B1E;
+}
+
+#fresa{
+    width: 30%;
+    overflow: hidden;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#fresa img{
+    height: 130px;
+    width: 100%;
+}
+
+#fresa h3{
+    text-align: center;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    border-top: 2px solid #111B1E;
+    border-bottom: 2px solid #111B1E;
 }
 
 
-footer a{
-    color: #d4a886;
-    text-decoration: none;
-    border: 1px solid #d4a886;
-    border-radius: 3px;
-    padding: 2px;
+
+/*-----------------Seccion stock adornos---------------*/
+
+.adornos{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#velas{
+    width: 30%;
+    overflow: hidden;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#velas img{
+    height: 130px;
+    width: 100%;
+}
+
+#velas h3{
+    text-align: center;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    border-top: 2px solid #111B1E;
+    border-bottom: 2px solid #111B1E;
+}
+
+#muñecos{
+    margin: 0px 5px 0px 5px;
+    width: 30%;
+    overflow: hidden;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#muñecos img{
+    height: 130px;
+    width: 100%;
+}
+
+#muñecos h3{
+    text-align: center;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    border-top: 2px solid #111B1E;
+    border-bottom: 2px solid #111B1E;
+}
+
+#impresion{
+    width: 30%;
+    overflow: hidden;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#impresion img{
+    height: 130px;
+    width: 100%;
+}
+
+#impresion h3{
+    text-align: center;
+    width: 90%;
+    padding: 10px 0px 10px 0px;
+    border-top: 2px solid #111B1E;
+    border-bottom: 2px solid #111B1E;
 }
 
 
 
+/*-------------------Seccion del balance---------------*/
 
-
-
-/*--------------Responsive--------------*/
-
-@media only screen and (max-width: 768px) {
-    
-    body{
-        background-color: red;
-    }
-    
-    nav{
-        display: flex;
-        align-items: center;
-    }
-    
-    nav h2{
-        margin: 10px;
-        left: 0px;
-        right: 0px;
-        width: 100%;
-        background-color: white;
-    }
-    
-    nav li{
-        width: 100%;
-        display: flex;
-        float: left;
-        
-    }
-    
-    footer{
-        font-size: smaller;
-        padding: 30px;
-    }
+.balance-dash img{
+    width: 100%;
 }
+
