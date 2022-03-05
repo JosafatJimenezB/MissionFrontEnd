@@ -177,6 +177,23 @@ section article h2{
 
 
 
+/*-----------------Seccion de pedidos-----------------*/
+
+.pedidos-dash table{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+.pedidos-dash table td, th{
+    text-align: center;
+    border-left: 2px solid #111B1E;
+    border-right: 2px solid #111B1E;
+}
+
+
+
 /*-----------------Seccion stock adornos---------------*/
 
 .adornos{
