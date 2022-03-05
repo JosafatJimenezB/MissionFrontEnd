@@ -410,6 +410,7 @@ nav a:hover{
 
 .container-contacto{
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
