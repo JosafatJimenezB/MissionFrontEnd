@@ -314,14 +314,16 @@ nav a:hover{
 }
 
 #nombre, #email, #telefono{
-    color: #111B1E;
-    background-color: #111B1E;
+    color: #d4a886;
     font-size: 1em;
     margin-top: 5px 0px 20px 0px;
     margin-bottom: 5px;
-    background-color: #d4a886;
+    background-color: #111B1E;
+    outline: none;
     padding: 4px;
     width: 60%;
+    border: none;
+    border-bottom: 1px solid #d4a886;
 }
 
 #send, #clear{
@@ -344,6 +346,7 @@ nav a:hover{
 }
 
 #especs{
+    outline: none;
     border-radius: 5px;
     background-color: #d4a886;
     height: 70px;
@@ -364,6 +367,7 @@ nav a:hover{
     font-weight: 600;
     padding: 5px;
     background-color: #d4a886;
+    outline: none;
 }
 
 #lbl-adorno{
@@ -377,6 +381,7 @@ nav a:hover{
     font-weight: 600;
     padding: 5px;
     background-color: #d4a886;
+    outline: none;
 }
 
 
